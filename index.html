@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/w3.css"> 
+</head>
+<body>
+    <div class="w3-container"> 
+        <img src="assets/img/images.jpeg" width="100%"> 
+    </div>
+
+    <div class="w3-bar w-red w3-card-4"> 
+        <button class="w3-bar-item w3-button" onclick="openKota('Pajero')">PAJERO SPORT</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Xpander')">NEW XPANDER</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('XFORCE')">XFORCE</button>
+        <button class="w3-var-item w3-button" onclick="openKota('DATA')">DATA DIRI</button>
+    </div>
+
+    <div id="Pajero" class="w3-container kota w3-animate-zoom" style="display:none"> 
+            <table>
+                <img src="assets/img/download.jpeg">
+            </table>
+    </div>
+
+    <div id="" class="w3-container kota w3-animate-zoom" style="display:none"> 
+    </div>
+
+    <div id="" class="w3-container kota w3-animate-zoom" style="display:none"> 
+    </div>
+
+    <div id="" class="w3-container kota w3-animate-zoom" style="display:none">
+    </div>
+
+    <script>
+        function OpenKota(namaKota) {
+            var i;
+            var x = document.getElementsByClassName("kota");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            document.getElementById(namaKota).style.display = "block";
+        }
+        </script>
+</body>
+</html>
